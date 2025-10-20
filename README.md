@@ -11,3 +11,12 @@
 - Demultiplexer
 - Multi-bit gates
 - Multi-way gates
+
+## [Project 2](projects/2/)
+
+**Content**:
+- Half-adder
+- Full-adder
+- Adder
+- Incrementer
+- [ALU](images/ALU.png)
