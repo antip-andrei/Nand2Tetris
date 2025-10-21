@@ -20,3 +20,10 @@
 - Adder
 - Incrementer
 - [ALU](images/ALU.png)
+
+## [Project 3](projects/3/)
+
+**Content**:
+- Register
+- RAM
+- Counter
