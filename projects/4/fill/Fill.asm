@@ -8,4 +8,46 @@
 // i.e. writes "black" in every pixel. When no key is pressed, 
 // the screen should be cleared.
 
-//// Replace this comment with your code.
+(READ)
+	// read KBD
+	@KBD
+	D=M
+	// if (KBD != 0) color = 0
+	// else color = -1
+	@color
+	M=0
+	@FILL
+	D;JEQ
+	@color
+	M=-1
+(FILL)
+	// i = 0
+	@i
+	M=0
+(LOOP)
+	// if (i == 8192) goto READ
+	@i
+	D=M
+	@8192
+	D=D-A
+	@READ
+	D;JEQ
+	// address = SCREEN + i
+	@i
+	D=M
+	@SCREEN
+	D=D+A
+	@address
+	M=D
+	// *address = color
+	@color
+	D=M
+	@address
+	A=M
+	M=D
+	// i += 1
+	@i
+	M=M+1
+	// goto LOOP
+	@LOOP
+	0;JMP
