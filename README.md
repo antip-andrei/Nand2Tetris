@@ -33,3 +33,10 @@
 **Content**:
 - Mult
 - Fill
+
+## [Project 5](projects/5/)
+
+**Content**:
+- [CPU](images/CPU.png)
+- [Memory](images/Memory.png)
+- [Computer](images/Computer.png)
